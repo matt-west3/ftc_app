@@ -30,6 +30,7 @@
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
@@ -45,7 +46,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
-@Autonomous(name = "TESTConcept: Ramp Motor Speed", group = "Concept")
+@Autonomous(name = "Concept: Ramp Motor Speed", group = "Concept")
 public class TestConceptRampMotorSpeed extends LinearOpMode {
 
     static final double INCREMENT   = 0.01;     // amount to ramp motor each CYCLE_MS cycle
@@ -94,7 +95,6 @@ public class TestConceptRampMotorSpeed extends LinearOpMode {
 
             // Display the current value
             telemetry.addData("Motor Power", "%5.2f", power);
-            telemetry.addData("myNote: ", "I'm using my own code!");
             telemetry.addData(">", "Press Stop to end test." );
             telemetry.update();
 
